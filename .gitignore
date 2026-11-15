@@ -1,9 +1,31 @@
-*.iml
-.gradle
+# Android / Gradle
+/.gradle/
+**/build/
+**/.cxx/
+**/.externalNativeBuild/
 /local.properties
-/.idea
+/captures/
+
+# Android Studio / IntelliJ
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Local machine and generated files
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+Thumbs.db
+*.log
+
+# Signing material and local secrets
+*.jks
+*.keystore
+keystore.properties
+.env
+.env.*
+!.env.example
+google-services.json
+GoogleService-Info.plist
+
+# Do not commit local SDK paths, Firebase service credentials,
+# signing keys, or environment-specific secrets.
